@@ -8,14 +8,14 @@ const BOT_ID = "BOT_ID";  // NO TOUCH
 
 // Helper function to send a message
 async function sendMessage(text) {
-  await fetch("https://api.groupme.com/v3/bots/post", {
+  await fetch("https://api.groupme.com/v3/bots/post"), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       bot_id: BOT_ID,
       text: text
     })
-  });
+  };
 }
 app.post("/", async (req, res)) => {
 function getMessage(){
