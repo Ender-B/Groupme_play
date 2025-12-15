@@ -34,7 +34,7 @@ function getName(){
 
 function getUserID(){
   //this never changes
-  return req.body.userID
+  return req.body.messages.user_id
 }
 
 
