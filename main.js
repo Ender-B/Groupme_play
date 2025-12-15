@@ -17,7 +17,7 @@ async function sendMessage(text) {
     })
   });
 }
-app.post("/", async (req, res) => {
+app.post("/", async (req, res)) => {
 function getMessage(){
 
   const message = req.body.text;
