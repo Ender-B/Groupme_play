@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const app = express();
 app.use(express.json());
 
-const BOT_ID = "";  // <-- Replace with your bot ID
+const BOT_ID = "BOT_ID";  // NO TOUCH
 
 // Helper function to send a message
 async function sendMessage(text) {
