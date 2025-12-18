@@ -21,7 +21,7 @@ app.post("/", async (req, res) => {
 function getMessage(){
 
   const message = req.body.text;
-    if (req.body.sender_type === "bot") {
+    if (req.body.sender_type == "bot") {
       // the sendStatus(200) means it doesn't reply
     return res.sendStatus(200);
   }
